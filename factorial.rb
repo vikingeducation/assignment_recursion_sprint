@@ -8,10 +8,8 @@ end
 
 def factorial_i(n)
   fact = 1
-  i = 1
-  while i <= n
+  1.upto(n) do |i|
     fact *= i
-    i += 1
   end
   fact
 end
