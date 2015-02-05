@@ -7,5 +7,11 @@ def palindrome_r(string)
 end
 
 def palindrome_i(string)
-  
+  stripped_string = string.downcase.gsub(/[^a-z]/, '')
+  test_length = stripped_string.length/2 - 1
+  0.upto test_length do |i|
+    j = -(i+1)
+    return false if stripped_string[i] != stripped_string[j]
+  end
+  true
 end
