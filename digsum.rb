@@ -1,6 +1,6 @@
 def digsum_r(n)
   if n < 10
-    n % 10
+    n
   else
     n % 10 + digsum_r(n/10)
   end
