@@ -1,7 +1,7 @@
 # Recursive Palindrome
 def palindrome_r(str)
 	return true if str.length == 1 || str.length == 0
-	# To steralize our string a little bit.
+	# To sterilize our string a little bit.
 	# The fact that something like this needs to 
 	# be included makes me question whether recursion is
 	# the best method for this type of question.
