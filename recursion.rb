@@ -25,5 +25,24 @@ class Recursion
   end
 
 
+  def sumdig_r(integer)
+
+    #base: when one digit left (< 10)
+    if integer < 10
+      return integer
+    else
+      # grab last digit & push remaining digits back through sumdig
+      integer % 10 + sumdig_r(integer / 10)
+    end
+
+  end
+
+
+  def sumdig_i(integer)
+
+    array = integer.to_s.split("").map { |str| str.to_i }
+    array.inject { |sum, digit| sum += digit }
+
+  end
 
 end
