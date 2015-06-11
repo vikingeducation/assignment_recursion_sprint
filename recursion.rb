@@ -45,4 +45,30 @@ class Recursion
 
   end
 
+
+  def palindrome_r?(string)
+    # base: 0 or 1 letters always true
+    if string.length <= 1
+      return true
+    else
+      # recursion: do outer layers match && are inner letters palindrome?
+      string[0] == string[-1] && palindrome_r?(string[1..-2])
+    end
+
+  end
+
+
+  def palindrome_i?(string)
+    midpoint = string.length / 2
+
+    result = true
+
+    1.upto(midpoint) do |index|
+      result = false unless string[index - 1] == string[-index]
+    end
+
+    result
+
+  end
+
 end
