@@ -38,10 +38,9 @@ end
 def palindrome_r(str)
   str_array = str.split("")
   if str_array.length == 0 || str_array.length == 1
-    true
+    return true
   else
-    if (str_array.pop == str_array.shift) && (str_array.length > 1)
-      print str_array.join("")
+    if (str_array.pop == str_array.shift) && (str_array.length >= 1)
       palindrome_r(str_array.join(""))
     else
       return false
@@ -50,5 +49,16 @@ def palindrome_r(str)
 end
 
 def palindrome_i(str)
-
+  result = false
+  str_array = str.split("")
+  while str_array.length > 1
+    if str_array.pop == str_array.shift
+      result = true
+    else
+      return false
+    end
+  end
+  result
 end
+
+
