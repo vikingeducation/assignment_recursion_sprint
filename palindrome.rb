@@ -1,13 +1,11 @@
 def palindrome_r(input)
 
-  input = input.split("")
+  input.upcase!
 
-  if input.length == 1
+  if input.length == 1 || input.length == 0
     return true
-  elsif input[0] == input.last
-    input.shift
-    input.pop
-    return palindrome_r(input.join)
+  elsif input[0] == input[-1]
+    return palindrome_r(input[1..-2])
   else
     return false
   end
@@ -16,14 +14,15 @@ end
 
 def palindrome_i(input)
 
-  palindrome = true
+  input.upcase!
+
   (input.length / 2).times do |index|
-    palindrome = false unless input[index] == input[-1 - index]
+    return false unless input[index] == input[-1 - index]
   end
 
-  palindrome
+  true
 
 end
 
-puts palindrome_r("racecar")
-puts palindrome_i("Dustin")
+puts palindrome_r("Dustin")
+puts palindrome_i("raCecar")
