@@ -8,5 +8,10 @@ class Factorial
 
   def factorial_i(integer)
     raise ArgumentError, "Argument must be an integer >= 0" if integer < 0 || !(integer.is_a? Integer)
+    total = 1
+    2.upto(integer) do |i|
+      total *= i
+    end
+    total
   end
 end

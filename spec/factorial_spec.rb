@@ -58,31 +58,30 @@ describe Factorial do
     it 'raises an ArgumentError if argument is not an integer' do
       expect{factorial.factorial_i(1.25)}.to raise_error(ArgumentError)
     end
-=begin
-    # factorial_r(0) == 1
-    it 'factorial_r(0) == 1' do
-      expect(factorial.factorial_r(0)).to eq(1)
+
+    # factorial_i(0) == 1
+    it 'factorial_i(0) == 1' do
+      expect(factorial.factorial_i(0)).to eq(1)
     end
 
-    # factorial_r(1) == 1
-    it 'factorial_r(1) == 1' do
-      expect(factorial.factorial_r(1)).to eq(1)
+    # factorial_i(1) == 1
+    it 'factorial_i(1) == 1' do
+      expect(factorial.factorial_i(1)).to eq(1)
     end
 
-    # factorial_r(2) == 2
-    it 'factorial_r(2) == 2' do
-      expect(factorial.factorial_r(2)).to eq(2)
+    # factorial_i(2) == 2
+    it 'factorial_i(2) == 2' do
+      expect(factorial.factorial_i(2)).to eq(2)
     end
 
-    # factorial_r(3) == 6
-    it 'factorial_r(3) == 6' do
-      expect(factorial.factorial_r(3)).to eq(6)
+    # factorial_i(3) == 6
+    it 'factorial_i(3) == 6' do
+      expect(factorial.factorial_i(3)).to eq(6)
     end
 
-    # factorial_r(8) == 40320
-    it 'factorial_r(8) == 40320' do
-      expect(factorial.factorial_r(8)).to eq(40320)
+    # factorial_i(8) == 40320
+    it 'factorial_i(8) == 40320' do
+      expect(factorial.factorial_i(8)).to eq(40320)
     end
-=end
   end
 end
