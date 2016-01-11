@@ -46,3 +46,33 @@ def sumdig_i(n)
   end
   sum
 end
+
+
+
+# PALINDROME
+
+
+def palindrome_r(string)
+  if string.length == 1 || string.length == 0
+    true
+  else
+    if string[0] == string[-1]
+      palindrome(string[1..-2])
+    else
+      false
+    end
+  end
+end
+
+
+def palindrome_ni(string)
+  # even number of letters
+  if string.length % 2 == 0
+    middle = string.length / 2  # right-side of middle
+    string[0..middle-1] == string[-middle..-1].reverse
+  # odd number of letters
+  else
+    middle = string.length / 2
+    string[0..middle-1] == string[-middle..-1].reverse
+  end
+end
