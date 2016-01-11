@@ -1,4 +1,4 @@
-
+# FACTORIAL
 
 def factorial_r(n)
   if n == 0
@@ -20,4 +20,29 @@ def factorial_i(n)
     end
   end
   result
+end
+
+
+
+
+# DIGIT SUM
+
+def sumdig_r(n)
+  sum = 0
+  if n == 0
+    sum
+  else
+   sum += n % 10 + sumdig_r(n/10)
+ end
+end
+
+
+def sumdig_i(n)
+  sum = 0
+  if n == 0
+    sum
+  else
+    split = n.to_s.split(//).each{|item| sum += item.to_i}
+  end
+  sum
 end
