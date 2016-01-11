@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+factorial_i	/Users/kitlangton/Viking/Unit5/assignment_recursion_sprint/recursion.rb	/^def factorial_i(max)$/;"	f
+factorial_i	/Users/kitlangton/Viking/Unit5/assignment_recursion_sprint/recursion_sprint.rb	/^def factorial_i(number)$/;"	f
+factorial_r	/Users/kitlangton/Viking/Unit5/assignment_recursion_sprint/recursion.rb	/^def factorial_r(max)$/;"	f
+factorial_r	/Users/kitlangton/Viking/Unit5/assignment_recursion_sprint/recursion_sprint.rb	/^def factorial_r(number)$/;"	f
+palindrome_i	/Users/kitlangton/Viking/Unit5/assignment_recursion_sprint/recursion.rb	/^def palindrome_i(str)$/;"	f
+palindrome_i	/Users/kitlangton/Viking/Unit5/assignment_recursion_sprint/recursion_sprint.rb	/^def palindrome_i(str)$/;"	f
+palindrome_r	/Users/kitlangton/Viking/Unit5/assignment_recursion_sprint/recursion.rb	/^def palindrome_r(str)$/;"	f
+palindrome_r	/Users/kitlangton/Viking/Unit5/assignment_recursion_sprint/recursion_sprint.rb	/^def palindrome_r(str)$/;"	f
+sumdig_i	/Users/kitlangton/Viking/Unit5/assignment_recursion_sprint/recursion.rb	/^def sumdig_i(num)$/;"	f
+sumdig_i	/Users/kitlangton/Viking/Unit5/assignment_recursion_sprint/recursion_sprint.rb	/^def sumdig_i(number)$/;"	f
+sumdig_r	/Users/kitlangton/Viking/Unit5/assignment_recursion_sprint/recursion.rb	/^def sumdig_r(num)$/;"	f
+sumdig_r	/Users/kitlangton/Viking/Unit5/assignment_recursion_sprint/recursion_sprint.rb	/^def sumdig_r(number)$/;"	f
