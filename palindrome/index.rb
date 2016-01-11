@@ -1,5 +1,4 @@
 def palindrome_r(str)
-	puts str
 	if str.length == 1 || str.length == 0
 		true
 	else
@@ -13,10 +12,11 @@ end
 
 def palindrome_i(str)
 	is_palindrome = true
-	until str.empty?
-		puts str
-		if str[0] == str[-1]
-			str = str[1..-2]
+  palindrome = str
+	until palidrome.empty?
+		puts palidrome
+		if palidrome[0] == palidrome[-1]
+			palidrome = palidrome[1..-2]
 		else
 			is_palindrome = false
 			break
