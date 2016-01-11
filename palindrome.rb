@@ -12,9 +12,12 @@ module Palindrome
 
 
   def palindrome_i(str)
-
-    
-
+    arr = str.split("")
+    while arr.length > 1
+      first = arr.shift
+      last = arr.pop
+      return false unless first == last
+    end
+    true
   end
-
 end
