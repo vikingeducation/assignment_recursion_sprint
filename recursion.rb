@@ -65,7 +65,7 @@ def palindrome_r(string)
 end
 
 
-def palindrome_ni(string)
+def palindrome_i(string)
   # even number of letters
   if string.length % 2 == 0
     middle = string.length / 2  # right-side of middle
