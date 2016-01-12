@@ -10,10 +10,8 @@ class Palindrome
     # Downcases all letters and then removes any characters that are not in the alphabet (e.g. spaces and punctuation)
     string = downcase_remove_spaces_and_punctuation(string)
 
-    # If it's a two letter word and the first letter and second letter are the same, returns true.
-    # elsif first letter and last letter are the same, second the second letter to the second last letter into the recursive method again.
-    # else false.
-    (string.downcase[0] == string.downcase[-1]) && palindrome_r( string[1..-2] )
+    # false if first and last characters are not the same otherwise let's cycle through again.
+    (string[0] == string[-1]) && palindrome_r( string[1..-2] )
   end
 
   def palindrome_i(string)
@@ -26,7 +24,6 @@ class Palindrome
     # Downcases all letters and then removes any characters that are not in the alphabet (e.g. spaces and punctuation)
     string = downcase_remove_spaces_and_punctuation(string)
 
-    # returns false if first and last character are different.
     while string.length >= 2
       return false if string[0] != string[-1]
       string = string[1..-2]
