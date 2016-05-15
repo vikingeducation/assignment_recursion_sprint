@@ -1,3 +1,5 @@
+Assignment completed by [Stephen Mayeux](Stephen Mayeux)
+
 # assignment_recursion_sprint
 Again and again and again and again and again...
 
