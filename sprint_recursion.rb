@@ -25,15 +25,16 @@ def sumdig_r(n)
   return n if n < 10
   arr = n.to_s.chars
   num = arr.pop.to_i
+  binding.pry
   num +  sumdig_r(arr.join("").to_i)
 end
 
 def palindrom_i(n)
+
 end
 
 def palindrom_r(n)
 end
-
 
 
 
