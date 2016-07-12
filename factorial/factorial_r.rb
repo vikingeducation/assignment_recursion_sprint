@@ -5,7 +5,8 @@ def factorial_r(n)
   
   if n == 0
     1
-  else n * factorial_r(n-1)
+  else
+    n * factorial_r(n-1)
   end
 end
 
