@@ -7,7 +7,7 @@ end
 # puts sumdig_r(1234)
 
 def sumdig_i(n)
-  nums = n.to_s.split(//).map(&:to_i).inject(:+)
+  nums = n.to_s.chars.map(&:to_i).inject(:+)
 end
 
 puts sumdig_i(12)
