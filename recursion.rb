@@ -3,13 +3,13 @@ def factorial_r(num)
   num * factorial_r(num - 1)
 end
 
-p factorial_r(5)
+#p factorial_r(5)
 
 def factorial_i(num)
   (1..num).inject(:*)
 end
 
-p factorial_i(5)
+#p factorial_i(5)
 
 def sumdig_r(num)
   num_str = num.to_s
@@ -20,4 +20,29 @@ def sumdig_r(num)
   end
 end
 
-p sumdig_r(234567)
+#p sumdig_r(234567)
+
+def sumdig_i(num)
+  p num.to_s.split("").inject(0) {|total, num| total += num.to_i}
+end
+
+#sumdig_i(154)
+
+def palindrome_r(string)
+  string = string.downcase.scan(/\w/).join("")
+  if string.length < 2
+    true
+  else
+    if string[0] == string[-1]
+      palindrome_r(string[1..-2])
+    else
+      return false
+    end
+  end
+end
+
+p palindrome_r("Rise to vote, sir")
+
+def palindrome_s(string)
+  string = string.downcase.scan(/\w/).join("")
+end
