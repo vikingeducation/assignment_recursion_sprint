@@ -8,7 +8,6 @@ end
 
 def sumdig_i(n)
   nums = n.to_s.split(//).map(&:to_i).inject(:+)
-  # nums.inject(:+)
 end
 
 puts sumdig_i(12)
