@@ -8,6 +8,5 @@ puts palindrome_r("aa")
 puts palindrome_r("aaaaa")
 
 def palindrome_i(str)
-
-
+  
 end
