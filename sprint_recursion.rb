@@ -28,11 +28,41 @@ def sumdig_r(n)
   num +  sumdig_r(arr.join("").to_i)
 end
 
-def palindrom_i(n)
+def palindrome_i(arr)
+
+  arr = arr.to_s.split('').select{|char| Array('a'..'z').include?(char.downcase)}
+
+  arr.map!{|char| char.downcase}
+
+  reversed_arr = []
+
+  i = -1
+  while i.abs <= arr.length
+    reversed_arr << arr[i].downcase #if letters.include?(arr[i].downcase)
+    i -= 1
+  end
+
+  reversed_arr == arr
+
 end
 
-def palindrom_r(n)
+
+
+# 'race car'
+def palindrome_r(str)
+
+  return str if str.length <= 1
+
+  a_string = str[-1]
+  # binding.pry
+  a_string = a_string + palindrome_r(str[0..-2])
+  str == a_string
+
 end
+
+arr = "Able was I ere I saw Elba"
+puts palindrome_r(arr)
+
 
 
 
