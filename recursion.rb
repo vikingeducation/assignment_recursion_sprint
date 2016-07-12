@@ -23,7 +23,7 @@ end
 #p sumdig_r(234567)
 
 def sumdig_i(num)
-  p num.to_s.split("").inject(0) {|total, num| total += num.to_i}
+  p num.to_s.split("").inject(0) {|total, number| total += number.to_i}
 end
 
 #sumdig_i(154)
@@ -41,8 +41,21 @@ def palindrome_r(string)
   end
 end
 
-p palindrome_r("Rise to vote, sir")
+#p palindrome_r("Rise to vote, sir")
 
-def palindrome_s(string)
+def palindrome_i(string)
   string = string.downcase.scan(/\w/).join("")
+  start = 0
+  finish = string.length - 1
+  while start <= finish
+    if string[start] == string[finish]
+      start += 1
+      finish -= 1
+    else
+      return false
+    end
+  end
+  return true
 end
+
+p palindrome_i("racecar")
