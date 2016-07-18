@@ -1,6 +1,5 @@
 def palindrome( string )
 
-	# take in the string
 	arr = []
 
 	str = string.split('')

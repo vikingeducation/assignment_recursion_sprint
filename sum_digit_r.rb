@@ -1,4 +1,3 @@
-
 def sum_digit( num )
 
 	arr = num.to_s.split("").map { | x | x.to_i }
