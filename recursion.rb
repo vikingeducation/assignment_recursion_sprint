@@ -29,10 +29,9 @@ def sumdig_r(n)
 
   remainder = n % 10
   n -= remainder
-  n /= 10
   sum_of_digits = remainder
 
-  sum_of_digits += sumdig_r(n)
+  sum_of_digits += sumdig_r(n / 10)
 
 end
 
