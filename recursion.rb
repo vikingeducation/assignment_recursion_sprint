@@ -40,11 +40,9 @@ def palindrome_r(string)
 end
 
 def palindrome_i(string)
-  string.length.downto(string.length / 2) do |index|
-    string[index - 1] == string[-index]
+  rev_string = ''
+  (string.length - 1).downto(0) do |index|
+    rev_string += string[index]
   end
+  rev_string == string
 end
-
-puts palindrome_r("racecar")
-
-
