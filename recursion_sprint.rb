@@ -33,20 +33,15 @@ end
 def palindrome_r(str)
   return true if str.length == 1 || str.length == 0
   return false if str[0] != str[-1]
-  str = str.split("")
-  str.shift
-  str.pop
-  str = str.join
-  palindrome_r(str)
+  palindrome_r(str[1..-2])
 end
 
 def palindrome_i(str)
   while str.length !=1 || str.length == 0
     return false if str[0] != str[-1]
-    str = str.split("")
-    str.shift
-    str.pop
-    str = str.join
+    str = str[1..-2]
   end
   true
 end
+
+p palindrome_i("bob")
