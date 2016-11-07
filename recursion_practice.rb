@@ -27,7 +27,7 @@ def sumdig_i(n)
 
 end
 
-=begin
+
 def sumdig_r(n)
   return n if (n >= 0) && (n <= 9)
 
@@ -41,14 +41,8 @@ def sumdig_r(n)
   output
 
 end
-=end
 
-def sumdig_r(n, a=0) # n = 1, a = 1
-  puts "n=#{n}, a=#{a}"
-  return n if n.to_s.length == a
-  temp = n.to_s[a].to_i
-  temp += sumdig_r(temp, a+1)
-end
+
 
 
 p sumdig_r(103)
