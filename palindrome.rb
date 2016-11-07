@@ -10,7 +10,7 @@ def palindrome_r(string)
   end
 end
 
-def palindrom_i(string)
+def palindrome_i(string)
   raise ArgumentError unless string.is_a?(String)
   while string.length > 1
     return false unless string[0] == string[-1]
