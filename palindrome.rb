@@ -1,11 +1,11 @@
 def palindrome_r(string)
-  string = string.downcase.delete(' ').delete(',')
-
-  return true if string.length < 2
-
-  if string[0] == string[-1]
-    new_string = string[1...-1]
-    palindrome_r(new_string)
+  return true if str.length < 2
+  
+  str = str.downcase.scan(/[a-z]/) unless Array === str
+  first = str.shift
+  last = str.pop  
+  if first == last
+    pali(str)
   else
     return false
   end
@@ -25,7 +25,3 @@ def palindrome_i(string)
   result
 
 end
-
-p palindrome_i("Rise to vote, sir")
-p palindrome_i("")
-
