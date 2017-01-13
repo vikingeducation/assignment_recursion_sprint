@@ -6,11 +6,13 @@ def sumdig_r(num, sum=0)
 end
 
 # def sumdig_i(num)
+# straightforward version
 #   num = num.to_s.split('').map(&:to_i)
 #   num.reduce(:+)
 # end
 
 def sumdig_i(num)
+  # more similar to the recursive version
   digit = num % 10
   sum  = 0
   until (num-digit == 0) 
