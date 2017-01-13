@@ -1,8 +1,6 @@
-def sumdig_r(num, sum=0)
-  digit = num % 10
-  sum += digit
-  return sum if num-digit == 0
-  sumdig_r((num-digit)/10, sum)
+def sumdig_r(num)
+  return num if num < 10
+  (num % 10) + sumdig_r(num/10)
 end
 
 # def sumdig_i(num)
@@ -13,12 +11,9 @@ end
 
 def sumdig_i(num)
   # more similar to the recursive version
-  digit = num % 10
   sum  = 0
-  until (num-digit == 0) 
-    digit = num % 10
-    sum += digit
-    num = ((num - digit) / 10)
-end
-sum
+  while num > 0
+    sum += num % 10
+    num /= 10
+  end
 end
