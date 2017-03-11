@@ -4,3 +4,15 @@ def factorial_r(n)
 end
 
 puts factorial_r(6)
+
+
+def factorial_i(n)
+	sum = 1
+	until n == 0
+		sum = sum * n
+		n = n -1
+	end
+	sum
+end
+
+puts factorial_i(6)
