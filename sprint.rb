@@ -30,3 +30,27 @@ def sumdig_i(n)
 
   n.to_s.split(//).map(&:to_i).sum
 end
+
+def palindrome_r?(string)
+  return true if string.length == 0 || string.length == 1
+
+  string_to_compare = string.downcase.gsub(/\W/, '')
+
+  return false unless string_to_compare[0] == string_to_compare[-1]
+
+  palindrome_r?(string_to_compare[1..-2])
+end
+
+def palindrome_i?(string)
+  return true if string.length == 0 || string.length == 1
+
+  string_to_compare = string.downcase.gsub(/\W/, '')
+
+  until string_to_compare.length == 0 || string_to_compare.length == 1
+    return false unless string_to_compare[0] == string_to_compare[-1]
+
+    string_to_compare = string_to_compare[1..-2]
+  end
+
+  true
+end
