@@ -12,3 +12,21 @@ def factorial_i(n)
 
   result
 end
+
+def sumdig_r(n, result = 0)
+  if n == 0
+    return result
+  else
+    length = n.to_s.length
+    quotient, modulus = n.divmod(10**(length - 1))
+    result += quotient
+
+    return sumdig_r(modulus, result) if quotient > 0
+  end
+end
+
+def sumdig_i(n)
+  return n if n.to_s.length == 1
+
+  n.to_s.split(//).map(&:to_i).sum
+end
