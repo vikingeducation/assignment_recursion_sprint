@@ -2,7 +2,6 @@ require "factorial"
 
 describe Factorial do
 
-
   describe "output" do
     it "should how the factorial of a number through recursion" do
       expect(subject.factorial_r(54)).to eq(230843697339241380472092742683027581083278564571807941132288000000000000)
