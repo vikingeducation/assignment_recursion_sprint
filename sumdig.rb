@@ -1,7 +1,7 @@
 
 
 def sumdig_r(num)
-  num < 10 ? num % 10 : num % 10 + sumdig_r(num / 10)
+  num < 10 ? num : num % 10 + sumdig_r(num / 10)
 end
 
 def sumdig_i(num)
