@@ -12,5 +12,5 @@ def factorial_i(num)
   result
 end
 
-puts factorial_r(5)
-puts factorial_i(5)
+puts factorial_r(20)
+puts factorial_i(20)
