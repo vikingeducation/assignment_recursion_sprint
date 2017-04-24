@@ -1,5 +1,11 @@
 def sumdig_r(n)
   
+  return i if n < 10
+  
+  remainder = n / 10
+
+  (n % 10) + sumdig_r(remainder)
+  
 end
 
 def sumdig_i(n)
