@@ -1,11 +1,12 @@
 def factorial_r(n)
-  if n == 1
+  if n <= 1
     return  1
   else
     return  n * factorial_r(n - 1)
   end
 end
-puts factorial_r(5)
+puts "fact r 5 is #{factorial_r(5)}"
+puts "fact r 0 is #{factorial_r(0)}"
 
 def factorial_i(n)
   fact = 1
