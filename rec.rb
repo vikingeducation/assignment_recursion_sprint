@@ -40,7 +40,7 @@ puts "sumdigit i 103 is #{sumdigit_i(103)}"
 
 def palindrome_r(word)
   letter_arr = word.split("")
-  if (letter_arr.length == 0) || (letter_arr.length == 1)
+  if (letter_arr.length < 2)
     return true
   else
     if letter_arr[0] == letter_arr[ -1]
@@ -52,8 +52,8 @@ def palindrome_r(word)
     end
   end
 end
-puts palindrome_r("radar")
-puts palindrome_r("ann")
+puts "pal r 'radar' is #{palindrome_r("radar")}"
+puts "pal r 'ann' is #{palindrome_r("ann")}"
 
 def palindrome_i(word)
   letter_arr = word.split("")
