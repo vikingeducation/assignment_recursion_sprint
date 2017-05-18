@@ -13,18 +13,19 @@ def factorial_i(n)
   2.upto(n) do |y|
     fact *= y
   end
+  return fact
 end
- puts factorial_i(5)
+ puts "fact i 5 is #{factorial_i(5)}"
 
 def sumdigit_r(n)
-  if ((n >= 0) && (n <= 9))
+  if n < 10
     return n
   else
     num = n % 10
     return sumdigit_r((n - num) / 10) + num
   end
 end
-puts sumdigit_r(103)
+puts "sumdigit r 103 is #{sumdigit_r(103)}"
 
 def sumdigit_i(n)
   sum = 0
@@ -35,7 +36,7 @@ def sumdigit_i(n)
   end
   return sum
 end
-puts sumdigit_i(103)
+puts "sumdigit i 103 is #{sumdigit_i(103)}"
 
 def palindrome_r(word)
   letter_arr = word.split("")
